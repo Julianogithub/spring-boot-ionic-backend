@@ -6,7 +6,6 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Entity
 public class ItemPedido implements Serializable {
 	private static final long serialVersionUID = 1L;
