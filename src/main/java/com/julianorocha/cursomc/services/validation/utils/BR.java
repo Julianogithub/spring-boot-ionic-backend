@@ -1,5 +1,8 @@
 package com.julianorocha.cursomc.services.validation.utils;
 
+// Codigo Fonte de * CPF e CNPJ * Link abaixo. 
+// https://github.com/Julianogithub/spring-boot-ionic-backend/blob/902b8be1531301a67a0b3b0b3a9781a6f39aa601/src/main/java/com/julianorocha/cursomc/services/validation/utils/BR.java
+
 public class BR {
 	// CPF
 	private static final int[] weightSsn = { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
