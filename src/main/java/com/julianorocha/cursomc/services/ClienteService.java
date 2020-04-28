@@ -28,6 +28,7 @@ public class ClienteService {
 	@Autowired
 	private ClienteRepository repo;
 	
+	@SuppressWarnings("unused")
 	@Autowired
 	private EnderecoRepository cidadeRepository;
 	
