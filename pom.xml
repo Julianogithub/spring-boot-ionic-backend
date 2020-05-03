@@ -58,16 +58,28 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 
-		<!-- Dependecia de Emailem Java --> 
+		<!-- Dependecia de Email em Java -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-		<!-- Dependecia de Emailem HTML --> 
+		<!-- Dependecia de Email em HTML -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+		<!-- Dependecia da JWT autenticação/autorização -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<!-- Dependecia de JWT autenticação/autorização-->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.7.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
