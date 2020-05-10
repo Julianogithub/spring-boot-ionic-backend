@@ -33,7 +33,7 @@ public class ItemPedido implements Serializable {
 	}
 	//Calculo do SubTotal do ItemPedido.
 	public double getSubTotal() {
-		return (preco - desconto) * quantidade;		
+		return (preco - desconto) * quantidade;
 	}
 
 	@JsonIgnore

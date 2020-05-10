@@ -25,21 +25,25 @@ import com.julianorocha.cursomc.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class ClienteService {
-	
-	@Autowired
+		
+	@Autowired	
+	private ClienteRepository repo;	
+		
+	@Autowired	
+	private EnderecoRepository enderecoRepository;	
+		
+	@Autowired	
 	private BCryptPasswordEncoder pe;
 	
-	@Autowired
-	private ClienteRepository repo;
-	
-	@SuppressWarnings("unused")
-	@Autowired
-	private EnderecoRepository cidadeRepository;
-	
-	@Autowired
-	private EnderecoRepository enderecoRepository;
-	
 	public Cliente find(Integer id) {
+		
+	// Arrumar esta função de ADMIN....	
+		
+	//	UserSS user = UserService.authenticated();
+	//	if (user==null || !user.hasRole(Perfil.ADMIN) && !id.equals(user.getId())) {
+	//		throw new AuthorizationException("Acesso negado ou Cliente Adiministrador!!!");
+	//	}
+		
 		Optional<Cliente> obj = repo.findById(id);
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrado! Id: " + id + ", Tipo: " + Cliente.class.getName()));
